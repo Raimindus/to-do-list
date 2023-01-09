@@ -7,7 +7,7 @@ function App() {
             <div className={styles.container}>
                 <div className={`${styles.form} ${styles.form1container}`}>
                     <form className={styles.formContainer}>
-                        <label>Input :</label><br /><input type="text" className={styles.input1} /><br />
+                        <label className={styles.label}>Todo :</label><br /><input type="text" className={styles.input1} /><br />
                         <button className={styles.button1}>Input</button>
                     </form>
                 </div>
