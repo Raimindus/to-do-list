@@ -1,38 +1,112 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.form {
+    display: block;
+    position: relative;
+    align-self: center;
+    width: 50%;
+    height: 20vh;
+}
+
+.label {}
+
+.form2container {
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.form1container {
+    display: inline-block;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px;
+    padding: 0px 0px 0px 100px;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    font-size: 100px;
+}
+
+.input1 {
+    overflow: auto;
+    margin: 3em 0em 0em 2em;
+    width: 60%;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFFFFF 58%, #000000 100%);
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+.listedItemContainer {
+    width: 95%;
+    height: 25vh;
+    border: 1px double;
+    border-image: radial-gradient(circle at 50% 50%, #4B9AC4 0%, #000000 100%) 1 / 10px stretch;
+    border-width: 10px;
 }

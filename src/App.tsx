@@ -1,23 +1,16 @@
-import logo from './assets/logo.svg';
+
 import styles from './App.module.scss';
 
 function App() {
     return (
         <div className={styles.App}>
-            <header className={styles['App-header']}>
-                <img src={logo} className={styles['App-logo']} alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className={styles['App-link']}
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <div className={styles.container}>
+                <div className={`${styles.form} ${styles.form1container}`}>
+                    <form className={styles.formContainer}><label>Input :</label><br /><input type="text" className={styles.input1} /><br /></form>
+                </div>
+                <div className={styles.form2container}>
+                    <div className={styles.listedItemContainer} />
+                </div></div>
         </div>
     );
 }
